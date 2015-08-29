@@ -1,22 +1,15 @@
 ﻿require 'clockwork'
-
-
 include Clockwork
 
 
 
-
 handler do |job|
-
 	when 'test.job'
-	
 		puts "test"
-
 	end
-
 end
 
-every(10.minutes, 'test.job')
+every(10.seconds, 'test.job')
 
 #every(60.seconds, 'test.job')
 #every(3.minutes, 'less.frequent.job')
