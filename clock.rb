@@ -2,7 +2,7 @@
 include Clockwork
 
 
-every(15.second, '1.second.job') do
+every(5.hour, '1.second.job') do
   puts "Running job"
 end
 
