@@ -2,14 +2,9 @@
 include Clockwork
 
 
-
-handler do |job|
-	when 'test.job'
-		puts "test"
-	end
+every(15.second, '1.second.job') do
+  puts "Running job"
 end
-
-every(10.seconds, 'test.job')
 
 #every(60.seconds, 'test.job')
 #every(3.minutes, 'less.frequent.job')
