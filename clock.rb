@@ -10,7 +10,7 @@ handler do |job|
 
 	when 'test.job'
 	
-		putd "test"
+		puts "test"
 
 	end
 
