@@ -1,9 +1,15 @@
-﻿require 'clockwork'
+﻿require 'open-uri'
+
+require 'clockwork'
 include Clockwork
 
 
 every(5.hour, '1.second.job') do
-  puts "Running job"
+  #puts "Running job"
+
+	open("http://www.toysking.jp/auc/rss2c.php") {
+	}
+
 end
 
 #every(60.seconds, 'test.job')
