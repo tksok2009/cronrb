@@ -4,7 +4,7 @@ require 'clockwork'
 include Clockwork
 
 
-every(5.hour, '1.second.job') do
+every(1.minutes, '1.second.job') do
   #puts "Running job"
 
 	open("http://www.toysking.jp/auc/rss2c.php") {
