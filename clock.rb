@@ -3,7 +3,7 @@ require 'clockwork'
 
 include Clockwork
 
-every(5.minutes, 'feed and ping.job') do
+every(1.day, 'feed and ping.job') do
 
 	open( ENV['testurl1']) {
 	}
