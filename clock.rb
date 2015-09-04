@@ -1,14 +1,16 @@
 ﻿require 'open-uri'
-
 require 'clockwork'
+
 include Clockwork
 
+every(5.minutes, 'feed and ping.job') do
 
-every(1.day, '1.second.job') do
-  #puts "Running job"
-
-	open("http://www.toysking.jp/auc/rss2c.php") {
+	open( ENV['testurl1']) {
 	}
+
+	open(ENV['testurl2']) {
+	}
+
 
 end
 
